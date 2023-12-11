@@ -1,0 +1,139 @@
+﻿{
+  "name": "IISProba10РегРезульт",
+  "modelName": "i-i-s-proba10-рег-результ",
+  "className": "РегРезульт",
+  "nameSpace": "IIS.Proba10",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датРегРезСобес",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "итогСобес",
+      "type": "i-i-s-proba10-итог-собес",
+      "flexberryType": "ИтогСобес",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "крКомИлиОбсРеш",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "оценкаКандид",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-proba10-организация",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "планирСобес",
+      "relatedTo": "i-i-s-proba10-планир-собес",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-proba10-сотрудники",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "РегРезультE",
+      "modelName": "i-i-s-proba10-рег-результ",
+      "attrs": [
+        {
+          "name": "датРегРезСобес",
+          "caption": "Дат рег рез собес",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "итогСобес",
+          "caption": "Итог собес",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "оценкаКандид",
+          "caption": "Оценка кандид",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "крКомИлиОбсРеш",
+          "caption": "Кр ком или обс реш",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "РегРезультL",
+      "modelName": "i-i-s-proba10-рег-результ",
+      "attrs": [
+        {
+          "name": "датРегРезСобес",
+          "caption": "Дат рег рез собес",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "итогСобес",
+          "caption": "Итог собес",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "оценкаКандид",
+          "caption": "Оценка кандид",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "крКомИлиОбсРеш",
+          "caption": "Кр ком или обс реш",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

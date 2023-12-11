@@ -1,0 +1,1 @@
+docker-compose -p proba10-java down

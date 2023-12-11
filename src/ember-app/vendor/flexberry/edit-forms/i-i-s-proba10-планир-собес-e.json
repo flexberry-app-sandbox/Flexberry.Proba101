@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Планир собес",
+  "name": "IISProba10ПланирСобесE",
+  "className": "ПланирСобесE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba10-планир-собес",
+      "modelProjection": "ПланирСобесE"
+    }
+  ]
+}

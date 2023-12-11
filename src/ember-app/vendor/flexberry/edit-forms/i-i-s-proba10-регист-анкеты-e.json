@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Регист анкеты",
+  "name": "IISProba10РегистАнкетыE",
+  "className": "РегистАнкетыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba10-регист-анкеты",
+      "modelProjection": "РегистАнкетыE"
+    }
+  ]
+}

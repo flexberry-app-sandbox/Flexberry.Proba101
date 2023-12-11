@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Рег результ",
+  "name": "IISProba10РегРезультE",
+  "className": "РегРезультE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba10-рег-результ",
+      "modelProjection": "РегРезультE"
+    }
+  ]
+}

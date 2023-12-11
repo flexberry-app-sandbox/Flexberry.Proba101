@@ -1,0 +1,104 @@
+﻿{
+  "name": "IISProba10ПланирСобес",
+  "modelName": "i-i-s-proba10-планир-собес",
+  "className": "ПланирСобес",
+  "nameSpace": "IIS.Proba10",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаПланСобес",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "иметьПриСебе",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-proba10-организация",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "регистАнкеты",
+      "relatedTo": "i-i-s-proba10-регист-анкеты",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "тЧПланирСобес",
+      "relatedTo": "i-i-s-proba10-т-ч-планир-собес",
+      "inverse": "планирСобес"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПланирСобесE",
+      "modelName": "i-i-s-proba10-планир-собес",
+      "attrs": [
+        {
+          "name": "датаПланСобес",
+          "caption": "Дата план собес",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "иметьПриСебе",
+          "caption": "Иметь при себе",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ТЧПланирСобесE",
+          "caption": "",
+          "name": "тЧПланирСобес",
+          "relatedTo": "i-i-s-proba10-т-ч-планир-собес",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ПланирСобесL",
+      "modelName": "i-i-s-proba10-планир-собес",
+      "attrs": [
+        {
+          "name": "датаПланСобес",
+          "caption": "Дата план собес",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "иметьПриСебе",
+          "caption": "Иметь при себе",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

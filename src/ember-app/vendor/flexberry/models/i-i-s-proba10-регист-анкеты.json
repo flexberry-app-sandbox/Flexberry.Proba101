@@ -1,0 +1,76 @@
+﻿{
+  "name": "IISProba10РегистАнкеты",
+  "modelName": "i-i-s-proba10-регист-анкеты",
+  "className": "РегистАнкеты",
+  "nameSpace": "IIS.Proba10",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаРегистр",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-proba10-организация",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "тЧРегистАнкеты",
+      "relatedTo": "i-i-s-proba10-т-ч-регист-анкеты",
+      "inverse": "регистАнкеты"
+    }
+  ],
+  "projections": [
+    {
+      "name": "РегистАнкетыE",
+      "modelName": "i-i-s-proba10-регист-анкеты",
+      "attrs": [
+        {
+          "name": "датаРегистр",
+          "caption": "Дата регистр",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ТЧРегистАнкетыE",
+          "caption": "Т ч регист анкеты",
+          "name": "тЧРегистАнкеты",
+          "relatedTo": "i-i-s-proba10-т-ч-регист-анкеты",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "РегистАнкетыL",
+      "modelName": "i-i-s-proba10-регист-анкеты",
+      "attrs": [
+        {
+          "name": "датаРегистр",
+          "caption": "Дата регистр",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,45 @@
+﻿{
+  "name": "IISProba10ТЧПланирСобес",
+  "modelName": "i-i-s-proba10-т-ч-планир-собес",
+  "className": "ТЧПланирСобес",
+  "nameSpace": "IIS.Proba10",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "тЧРегистАнкеты",
+      "relatedTo": "i-i-s-proba10-т-ч-регист-анкеты",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "планирСобес",
+      "relatedTo": "i-i-s-proba10-планир-собес",
+      "inverse": "тЧПланирСобес"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧПланирСобесE",
+      "modelName": "i-i-s-proba10-т-ч-планир-собес",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТЧПланирСобесL",
+      "modelName": "i-i-s-proba10-т-ч-планир-собес",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
